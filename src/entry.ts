@@ -1,5 +1,5 @@
 import { App } from "vue";
-import SButon from "./button copy";
+import SButon from "./button";
 import SFCButton from "./SFCButton.vue";
 import JSXButton from "./JSXButton";
 // 导出单独组件
