@@ -59,18 +59,26 @@ export default defineComponent({
     return () => (
       <button
         class={`
-      py-2
-      px-4
-      text-white
-      text-sm
-      bg-${props.color}-500
-      hover:bg-${props.color}-700
-      border-none
-      rounded
-      cursor-pointer
-    `}
+        py-${size[props.size].y}
+        px-${size[props.size].x}
+        ${props.round ? "rounded-full" : "rounded-lg"}
+        bg-${props.color}-${props.plain ? "100" : "500"}
+        font-semibold 
+        rounded-lg 
+        shadow-md 
+        text-white 
+        bg-${props.color}-500 
+        hover:bg-${props.color}-700  
+        border-none 
+        cursor-pointer
+        m-1 
+      `}
       >
-        {props.icon && <i class={`i-ic-baseline-${props.icon} p-3`}></i>}
+        {props.icon !== "" ? (
+          <i class={`i-ic-baseline-${props.icon} p-3`}></i>
+        ) : (
+          ""
+        )}
         {slots.default ? slots.default() : ""}
       </button>
     );
