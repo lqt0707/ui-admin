@@ -1,8 +1,8 @@
 {
-  "name": "ui-demo-demo",
+  "name": "ui-demo-lqt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/vite-ui.umd.js",
   "module": "./dist/vite-ui.mjs",
   "files": [
     "dist"
@@ -10,7 +10,9 @@
   "types": "dist/entry.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
@@ -30,6 +32,7 @@
   "author": "juetan <conact@juetan.cn> (http://www.juetan.cn)",
   "license": "MIT",
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
     "@iconify-json/ic": "^1.1.9",
@@ -45,6 +48,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.4.0",
+    "esno": "^0.16.3",
     "happy-dom": "^6.0.4",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
