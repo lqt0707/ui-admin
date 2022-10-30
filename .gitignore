@@ -3,3 +3,8 @@ node_modules
 /packages/ui-demo/node_modules/
 /packages/ui-demo/dist/
 /packages/ui-demo/.idea/
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/ui-admin.iml
+/.idea/vcs.xml
