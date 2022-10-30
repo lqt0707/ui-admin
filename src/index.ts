@@ -1,8 +1,8 @@
 import { createApp } from "vue";
-import SButton from "./button";
+import SButton from "./Button";
 import SFCButton from "./SFCButton.vue";
 import JSXButton from "./JSXButton";
-import SmartyUI from "./entry";
+import UIDemo from "./entry";
 
 createApp({
   template: `
@@ -25,5 +25,5 @@ createApp({
         </div>
     `,
 })
-  .use(SmartyUI)
+  .use(UIDemo)
   .mount("#app");
