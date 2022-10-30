@@ -1,16 +1,17 @@
 {
-  "name": "ui-admin",
+  "name": "packages",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "node ./scripts/preinstall.js"
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vite": "^3.0.9"
+    "vue": "^3.2.37",
+    "ui-demo-lqt": "workspace:^1.0.0"
   }
 }
